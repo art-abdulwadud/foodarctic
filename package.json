@@ -1,0 +1,11 @@
+{
+  "name": "restaurants",
+  "version": "1.0.0",
+  "description": "A list of some of the best restaurants in the wolrd",
+  "main": "index.js",
+  "author": "Abdulwadud Mahamad",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

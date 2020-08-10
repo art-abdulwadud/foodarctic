@@ -1,0 +1,89 @@
+/* Common Classes */
+:root {
+  --light: #fff;
+  --dark: #343a40;
+}
+
+.w-h-100 {
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+/*** Grids ***/
+.two-sec-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 7fr;
+  grid-template-areas:
+    "navbar"
+    "intro";
+  overflow: hidden;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "item item item";
+}
+
+/*** Containers ***/
+.text-container-center {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.text-content-center {
+  background: #f8f9fa;
+  text-align: center;
+}
+
+/*** Text sizes ***/
+.heading {
+  font-family: "Bowlby One SC";
+  font-size: 3em;
+}
+
+.sub-heading {
+  font-family: "Bowlby One SC";
+  font-size: 2em;
+}
+
+.small-text {
+  font-family: "Open Sans Condensed";
+  font-size: 1.5em;
+}
+
+/*** colors ***/
+.white {
+  color: var(--light);
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .small-text {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .small-text {
+    font-size: 1.3em;
+  }
+}
