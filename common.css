@@ -107,6 +107,20 @@
   cursor: pointer;
 }
 
+/*** Animations ***/
+.fade {
+  animation: fade 1s linear 1 alternate;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .btn-yellow {
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
