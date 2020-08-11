@@ -25,7 +25,7 @@
   <body>
     <main class="home-page">
       <header class="two-sec-grid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-main fixed-top">
           <a class="navbar-brand" href="index.html">FoodAcrtic</a>
           <button
             class="navbar-toggler"
@@ -58,27 +58,18 @@
           </div>
         </nav>
         <div class="intro-container">
-          <div class="text-container-center p-2">
-            <div class="text-content-center p-2">
-              <h4 class="sub-heading">Best Restaurants in The World</h4>
-              <p class="small-text">
-                Here at FoodAcrtic, find the list of some of the best
-                restaurants in the whole world. Optionally, you can filter by
-                country or city.
-              </p>
-              <div class="search-box-container">
-                <div class="search-box white p-2">
-                  <input
-                    type="text"
-                    class="search-input"
-                    placeholder="Coutry"
-                  />
-                  <p class="m-1">or</p>
-                  <input type="text" class="search-input" placeholder="City" />
-                  <div class="search-btn p-1 m-1 white">
-                    <i class="material-icons search-icon">search</i> Search
-                  </div>
-                </div>
+          <div class="text-container-center overlay p-2">
+            <div class="text-content-center bg-main p-2">
+              <div class="main-search-container w-h-100">
+                <input
+                  type="text"
+                  name="main-search"
+                  id="main-search"
+                  class="w-h-100"
+                  autofocus
+                  placeholder="Restaurant's name, country or city"
+                />
+                <i class="material-icons search-icon">search</i>
               </div>
             </div>
             <div
@@ -91,7 +82,7 @@
         </div>
       </header>
       <section class="list-preview">
-        <h1 class="text-center white heading">FoodAcrtic</h1>
+        <h1 class="text-center white heading pt-3 pb-2">Best Restaurants</h1>
         <div class="text-container-center">
           <div class="flex-card">
             <div class="text-container-center">
@@ -106,8 +97,8 @@
                   />
                 </div>
                 <div class="top-layer w-h-100 column">
-                  <h4>Hotel Name</h4>
-                  <h6>Country</h6>
+                  <h4 class="sub-heading">Hotel Name</h4>
+                  <h6 class="small-text">Country</h6>
                 </div>
               </div>
             </div>
@@ -125,8 +116,8 @@
                   />
                 </div>
                 <div class="top-layer w-h-100 column">
-                  <h4>Hotel Name</h4>
-                  <h6>Country</h6>
+                  <h4 class="sub-heading">Hotel Name</h4>
+                  <h6 class="small-text">Country</h6>
                 </div>
               </div>
             </div>
@@ -142,27 +133,8 @@
                   />
                 </div>
                 <div class="top-layer w-h-100 column">
-                  <h4>Hotel Name</h4>
-                  <h6>Country</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-card">
-            <div class="text-container-center">
-              <div class="text-content-center w-h-100">
-                <div class="bottom-layer w-h-100">
-                  <img
-                    src="./logo.jpg"
-                    alt="logo"
-                    class="bottom-layer-img w-h-100"
-                    height="20"
-                    width="20"
-                  />
-                </div>
-                <div class="top-layer w-h-100 column">
-                  <h4>Hotel Name</h4>
-                  <h6>Country</h6>
+                  <h4 class="sub-heading">Hotel Name</h4>
+                  <h6 class="small-text">Country</h6>
                 </div>
               </div>
             </div>
@@ -180,8 +152,27 @@
                   />
                 </div>
                 <div class="top-layer w-h-100 column">
-                  <h4>Hotel Name</h4>
-                  <h6>Country</h6>
+                  <h4 class="sub-heading">Hotel Name</h4>
+                  <h6 class="small-text">Country</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-card">
+            <div class="text-container-center">
+              <div class="text-content-center w-h-100">
+                <div class="bottom-layer w-h-100">
+                  <img
+                    src="./logo.jpg"
+                    alt="logo"
+                    class="bottom-layer-img w-h-100"
+                    height="20"
+                    width="20"
+                  />
+                </div>
+                <div class="top-layer w-h-100 column">
+                  <h4 class="sub-heading">Hotel Name</h4>
+                  <h6 class="small-text">Country</h6>
                 </div>
               </div>
             </div>
@@ -197,14 +188,21 @@
                   />
                 </div>
                 <div class="top-layer w-h-100 column">
-                  <h4>Hotel Name</h4>
-                  <h6>Country</h6>
+                  <h4 class="sub-heading">Hotel Name</h4>
+                  <h6 class="small-text">Country</h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <footer class="center bg-main">
+        <div class="p-3 center text-center">
+          <p class="small-text">
+            @FoodAcrtic 2020
+          </p>
+        </div>
+      </footer>
     </main>
     <script src="bootstrap/jquery-3.2.1.slim.min.js"></script>
     <script src="bootstrap/popper.min.js"></script>

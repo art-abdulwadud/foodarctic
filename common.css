@@ -42,7 +42,6 @@
   position: relative;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -51,19 +50,23 @@
 }
 
 .text-content-center {
-  background: #f8f9fa;
   text-align: center;
 }
 
 /*** Text sizes ***/
 .heading {
-  font-family: "Bowlby One SC";
-  font-size: 3em;
+  font-family: "Zilla Slab Highlight";
+  font-size: 4em;
 }
 
 .sub-heading {
   font-family: "Bowlby One SC";
   font-size: 2em;
+}
+
+.medium-text {
+  font-family: "Open Sans Condensed";
+  font-size: 3em;
 }
 
 .small-text {
@@ -74,6 +77,38 @@
 /*** colors ***/
 .white {
   color: var(--light);
+}
+
+.yellow {
+  color: #fdfcfb;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*** Backgrounds ***/
+.bg-black {
+  background: var(--dark);
+}
+
+.bg-main {
+  background-image: radial-gradient(
+    circle 248px at center,
+    #16d9e3 0%,
+    #30c7ec 47%,
+    #46aef7 100%
+  );
+}
+
+/*** Buttons ***/
+.button {
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn-yellow {
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
