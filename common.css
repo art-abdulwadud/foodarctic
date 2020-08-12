@@ -1,6 +1,6 @@
 /* Common Classes */
 :root {
-  --light: #fff;
+  --light: #e2ebf0;
   --dark: #343a40;
 }
 
@@ -93,12 +93,7 @@
 }
 
 .bg-main {
-  background-image: radial-gradient(
-    circle 248px at center,
-    #16d9e3 0%,
-    #30c7ec 47%,
-    #46aef7 100%
-  );
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 /*** Buttons ***/
