@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 button:focus {
   outline: none !important;
 }
@@ -32,44 +38,6 @@ header {
   background-attachment: fixed;
   grid-area: intro;
   z-index: 0;
-}
-
-.slider {
-  position: relative;
-}
-
-.slide {
-  display: none;
-  animation-duration: 0.4s;
-}
-
-.slide-btns {
-  position: absolute;
-  top: 50%;
-  text-decoration: none;
-  color: white;
-  background: transparent;
-  border: none;
-  z-index: 99;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
-.prev,
-.next {
-  font-size: 2em;
-  transition: 0.2s;
-}
-
-.prev:hover,
-.next:hover {
-  font-size: 2.1em;
 }
 
 .main-search-container {
@@ -113,6 +81,45 @@ header {
   background: #282c34;
 }
 
+.slider {
+  position: relative;
+}
+
+.slide {
+  display: none;
+  animation-duration: 0.4s;
+}
+
+.slide-btns-wrapper {
+  position: relative;
+  width: 100%;
+  background: #282c34;
+}
+
+.slide-btns {
+  position: relative;
+  bottom: 0;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  border: none;
+  z-index: 99;
+}
+
+.prev,
+.next {
+  font-size: 2em;
+  transition: 0.2s;
+}
+
+.prev:hover {
+  padding-right: 10px;
+}
+
+.next:hover {
+  padding-left: 10px;
+}
+
 /*** Flex card ***/
 .flex-card {
   width: 400px;
@@ -139,9 +146,14 @@ header {
   width: 100%;
 }
 
+footer {
+  position: relative;
+  width: 100%;
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
   header {
-    height: 150vh;
+    min-height: 80vh;
   }
   .search-box {
     flex-direction: column;
@@ -181,6 +193,8 @@ header {
   }
   .flex-card {
     flex: 1 50%;
+    width: 300px;
+    height: 250px;
   }
 }
 

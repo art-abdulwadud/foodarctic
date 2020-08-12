@@ -126,12 +126,20 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+  .heading {
+    font-size: 3em;
+  }
+
   .small-text {
     font-size: 1.3em;
   }
 }
 
 @media (max-width: 480px) {
+  .heading {
+    font-size: 3em;
+  }
+
   .small-text {
     font-size: 1.3em;
   }

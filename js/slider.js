@@ -1,6 +1,7 @@
-let slides = document.querySelectorAll('.slide');
-let prev = document.querySelector('.prev');
-let next = document.querySelector('.next');
+const slides = document.querySelectorAll('.slide');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const listPreview = document.querySelector('.list-preview');
 let slideIndex = 1;
 
 const startSlide = (slide, prev=null,direction = "none") => {
@@ -30,6 +31,7 @@ startSlide(slideIndex);
 
 const moveSlide = (slide, direction, prev) => {
     startSlide(slideIndex += slide, prev, direction);
+    window.scrollTo(0, listPreview);
 }
 
 const slideLeft = (slide) => {
