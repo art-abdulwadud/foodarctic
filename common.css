@@ -65,6 +65,7 @@
 
 .text-content-center {
   text-align: center;
+  background-image: var(--light-gradient);
 }
 
 /*** Text sizes ***/
@@ -101,7 +102,8 @@
 .bg-dark {
   background-image: var(--dark-gradient);
   background-blend-mode: multiply, multiply;
-  --shadow: 0 0 10px white, 0 0 40px white, 0 0 70px white;
+  --shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.4),
+    0 0 70px rgba(255, 255, 255, 0.4);
   --color: white !important;
 }
 

@@ -171,6 +171,7 @@ footer {
   flex-direction: column;
   z-index: 99;
   background-image: var(--light-gradient);
+  cursor: pointer;
 }
 
 .turned-bg {
