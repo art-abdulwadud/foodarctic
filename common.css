@@ -2,6 +2,19 @@
 :root {
   --light: #e2ebf0;
   --dark: #343a40;
+  --dark-gradient: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  --light-gradient: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  --shadow: 0 0 10px #434343, 0 0 40px #434343, 0 0 70px #434343;
 }
 
 .w-h-100 {
@@ -79,21 +92,19 @@
   color: var(--light);
 }
 
-.yellow {
-  color: #fdfcfb;
-}
-
 .overlay {
   background: rgba(0, 0, 0, 0.5);
 }
 
 /*** Backgrounds ***/
 .bg-black {
-  background: var(--dark);
+  background-image: var(--dark-gradient);
+  background-blend-mode: multiply, multiply;
+  --shadow: 0 0 10px white, 0 0 40px white, 0 0 70px white;
 }
 
 .bg-main {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background-image: var(--light-gradient);
 }
 
 /*** Buttons ***/

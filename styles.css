@@ -11,7 +11,7 @@ button:focus {
 /* Header */
 header {
   height: auto;
-  min-height: 45vh;
+  min-height: 50vh;
   overflow: hidden;
 }
 
@@ -129,7 +129,7 @@ header {
 }
 
 .flex-card:hover {
-  box-shadow: 0 0 10px #434343, 0 0 40px #434343, 0 0 70px #434343;
+  box-shadow: var(--shadow);
 }
 
 .top-layer {
@@ -179,6 +179,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+  header {
+    min-height: 55vh;
+  }
   #main-search {
     font-size: 1em;
   }
