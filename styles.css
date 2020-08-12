@@ -1,8 +1,6 @@
-html,
 body {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 button:focus {
   outline: none !important;
@@ -22,11 +20,20 @@ header {
 .navbar-brand {
   font-family: "Monoton", cursive;
   font-size: calc(100% + 10px);
+  color: var(--color) !important;
+}
+
+.turned {
+  background-image: var(--light-gradient) !important;
 }
 
 .nav-item {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: calc(80% + 10px);
+}
+
+.nav-link {
+  color: var(--color) !important;
 }
 
 /*** Intro Section ***/
@@ -153,6 +160,21 @@ header {
 footer {
   position: relative;
   width: 100%;
+}
+
+/* Toggler for dark and light mode */
+.theme-toggle-wrapper {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  flex-direction: column;
+  z-index: 99;
+  background-image: var(--light-gradient);
+}
+
+.turned-bg {
+  background: var(--light) !important;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {

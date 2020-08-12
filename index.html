@@ -23,12 +23,12 @@
   </head>
 
   <body>
-    <main class="home-page">
+    <main>
       <header class="two-sec-grid">
         <nav class="navbar navbar-expand-lg navbar-light bg-main fixed-top">
           <a class="navbar-brand" href="index.html">FoodAcrtic</a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler turn"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNavDropdown"
@@ -45,11 +45,34 @@
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Extras
+                </a>
+                <div
+                  class="dropdown-menu animate__animated animate__fadeInDown turn-bg
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a class="dropdown-item" href="single-blog.html"
+                    >Single Blog</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="single-res.html"
+                    >Single Restaurant</a
+                  >
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -68,7 +91,7 @@
                   type="text"
                   name="main-search"
                   id="main-search"
-                  class="w-h-100"
+                  class="w-h-100 turn-color"
                   autofocus
                   placeholder="Restaurant's name, country or city"
                 />
@@ -907,13 +930,13 @@
           </div>
           <div class="slide-btns-wrapper center">
             <button
-              class="button slide-btns center prev mr-2"
+              class="button slide-btns center prev mr-2 turn-color"
               onclick="slideLeft(-1)"
             >
               <i class="material-icons prev">keyboard_arrow_left</i>Previous
             </button>
             <button
-              class="button slide-btns center next"
+              class="button slide-btns center next turn-color"
               onclick="slideRight(1)"
             >
               Next
@@ -922,9 +945,12 @@
           </div>
         </div>
       </section>
+      <section class="theme-toggle-wrapper p-1 small-text turn-bg">
+        <i class="material-icons">brightness_4</i>
+      </section>
       <footer class="center bg-main">
         <div class="p-3 center text-center">
-          <p class="small-text">
+          <p class="small-text turn-color">
             @FoodAcrtic 2020
           </p>
         </div>
@@ -935,5 +961,6 @@
     <script src="bootstrap/bootstrap.min.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/theme.js"></script>
   </body>
 </html>

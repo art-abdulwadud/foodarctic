@@ -1,7 +1,8 @@
 /* Common Classes */
 :root {
-  --light: #e2ebf0;
+  --light: #cfd9df;
   --dark: #343a40;
+  --color: black;
   --dark-gradient: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.15) 0%,
@@ -97,10 +98,11 @@
 }
 
 /*** Backgrounds ***/
-.bg-black {
+.bg-dark {
   background-image: var(--dark-gradient);
   background-blend-mode: multiply, multiply;
   --shadow: 0 0 10px white, 0 0 40px white, 0 0 70px white;
+  --color: white !important;
 }
 
 .bg-main {

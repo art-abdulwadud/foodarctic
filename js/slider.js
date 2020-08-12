@@ -31,7 +31,7 @@ startSlide(slideIndex);
 
 const moveSlide = (slide, direction, prev) => {
     startSlide(slideIndex += slide, prev, direction);
-    window.scrollTo(0, listPreview);
+    window.scrollTo({top: listPreview, behavior: 'smooth' });
 }
 
 const slideLeft = (slide) => {
