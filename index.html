@@ -41,9 +41,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto text-center">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html"
-                  >Home <span class="sr-only">(current)</span></a
-                >
+                <a class="nav-link current" href="index.html">Home</a>
               </li>
 
               <li class="nav-item">
@@ -62,7 +60,7 @@
                   Extras
                 </a>
                 <div
-                  class="dropdown-menu animate__animated animate__fadeInDown turn-bg
+                  class="dropdown-menu animate__animated animate__fadeInDown turn-bg"
                   aria-labelledby="navbarDropdown"
                 >
                   <a class="dropdown-item" href="single-blog.html"
@@ -931,13 +929,13 @@
           <div class="slide-btns-wrapper center">
             <button
               class="button slide-btns center prev mr-2 turn-color"
-              onclick="slideLeft(-1)"
+              onclick="moveSlide(-1, 'slideInRight')"
             >
               <i class="material-icons prev">keyboard_arrow_left</i>Previous
             </button>
             <button
               class="button slide-btns center next turn-color"
-              onclick="slideRight(1)"
+              onclick="moveSlide(1, 'slideInLeft')"
             >
               Next
               <i class="material-icons next">keyboard_arrow_right</i>
@@ -946,7 +944,8 @@
         </div>
       </section>
       <section class="theme-toggle-wrapper p-1 small-text turn-bg">
-        <i class="material-icons theme-icon">brightness_5</i>
+        <span class="xx-small-text">Theme</span
+        ><i class="material-icons theme-icon">brightness_5</i>
       </section>
       <footer class="center bg-main">
         <div class="p-3 center text-center">
@@ -962,5 +961,13 @@
     <script src="js/animate.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/theme.js"></script>
+    <script>
+      const flexCard = document.querySelectorAll(".flex-card");
+      flexCard.forEach((card) => {
+        card.addEventListener("click", () => {
+          window.location.href = "single-res.html";
+        });
+      });
+    </script>
   </body>
 </html>

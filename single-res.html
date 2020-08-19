@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="logo.jpg" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="common.css" />
+    <title>FoodAcrtic</title>
+  </head>
+
+  <body class="bg-main">
+    <main>
+      <header class="two-sec-grid-b">
+        <nav class="navbar navbar-expand-lg navbar-light bg-main fixed-top">
+          <a class="navbar-brand" href="index.html">FoodAcrtic</a>
+          <button
+            class="navbar-toggler turn"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto text-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link current dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Extras
+                </a>
+                <div
+                  class="dropdown-menu animate__animated animate__fadeInDown turn-bg"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <a class="dropdown-item" href="single-blog.html"
+                    >Single Blog</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="single-res.html"
+                    >Single Restaurant</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="video-player">
+          <video class="video" src="vid.mp4" controls muted></video>
+          <div class="player-options"></div>
+        </div>
+      </header>
+      <section class="theme-toggle-wrapper p-1 small-text turn-bg">
+        <span class="xx-small-text">Theme</span
+        ><i class="material-icons theme-icon">brightness_5</i>
+      </section>
+      <footer class="center bg-main">
+        <div class="p-3 center text-center">
+          <p class="small-text turn-color">
+            @FoodAcrtic 2020
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="bootstrap/jquery-3.2.1.slim.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/video-player.js"></script>
+  </body>
+</html>

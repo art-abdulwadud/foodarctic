@@ -3,6 +3,7 @@ const themeIcon = document.querySelector(".theme-icon");
 const turnWhiteBgImg = document.querySelector(".turn");
 const turnWhiteBgColor = document.querySelector(".turn-bg");
 const turnColor = document.querySelectorAll(".turn-color");
+const current = document.querySelectorAll(".current");
 
 toggler.addEventListener("click", () => {
   themeIcon.innerHTML === "brightness_4"
@@ -21,5 +22,9 @@ toggler.addEventListener("click", () => {
   for (let i = 0; i < turnColor.length; i++) {
     const element = turnColor[i];
     element.classList.toggle("white");
+  }
+  for (let i = 0; i < current.length; i++) {
+    const element = current[i];
+    element.classList.toggle("current-dark");
   }
 });
