@@ -83,20 +83,39 @@
           <div class="player-options pb-2">
             <div class="player-length"></div>
             <div class="video-time xx-small-text text-white">
-              <span class="current-time">0.00</span>
+              <span class="current-time">0.00</span> /
               <span class="duration">0.00</span>
             </div>
-            <button id="play">
-              <div class="material-icons" id="play-icon">
-                play_circle_outline
-              </div>
-            </button>
+            <div class="player-btns">
+              <button id="rewind" class="control-btns">
+                <div class="material-icons control-icons">
+                  fast_rewind
+                </div>
+              </button>
+              <button id="play" class="control-btns">
+                <div class="material-icons control-icons" id="play-icon">
+                  play_circle_outline
+                </div>
+              </button>
+              <button id="forward" class="control-btns">
+                <div class="material-icons control-icons">
+                  fast_forward
+                </div>
+              </button>
+            </div>
           </div>
           <div class="video-info">
             <p>Name: <span class="small-text">Noma</span></p>
             <p>Country: <span class="small-text">Denmark</span></p>
             <p>City: <span class="small-text">Copenhagen</span></p>
             <p>Chef: <span class="small-text">René Redzepi</span></p>
+          </div>
+          <div class="main-play-btn center">
+            <button class="control-btns">
+              <div class="material-icons main-play-icon">
+                play_circle_outline
+              </div>
+            </button>
           </div>
         </div>
       </header>
