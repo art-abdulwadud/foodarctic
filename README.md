@@ -5,6 +5,7 @@ A Web Template created using pure HTML, CSS and JavaScript. [Check it out here](
 ## Install
 
 Clone repo
+
 Open HTML files on a browser
 
 ## License
