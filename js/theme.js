@@ -1,30 +1,25 @@
 const toggler = document.querySelector(".theme-toggle-wrapper");
+const mainColor = document.querySelectorAll(".bg-main");
 const themeIcon = document.querySelector(".theme-icon");
-const turnWhiteBgImg = document.querySelector(".turn");
-const turnWhiteBgColor = document.querySelector(".turn-bg");
+const turnWhiteBgImg = document.querySelectorAll(".turn");
+const turnWhiteBgColor = document.querySelectorAll(".turn-bg");
 const turnColor = document.querySelectorAll(".turn-color");
 const current = document.querySelectorAll(".current");
+
+const togglerColors = (arr, toggleClass) => {
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    element.classList.toggle(toggleClass);
+  }
+}
 
 toggler.addEventListener("click", () => {
   themeIcon.innerHTML === "brightness_4"
     ? (themeIcon.innerHTML = "brightness_5")
     : (themeIcon.innerHTML = "brightness_4");
-  const mainColor = document.querySelectorAll(".bg-main");
-  for (let i = 0; i < mainColor.length; i++) {
-    const element = mainColor[i];
-    element.classList.toggle("bg-dark");
-  }
-  turnWhiteBgImg.classList.toggle("turned");
-  for (let i = 0; i < turnWhiteBgColor.length; i++) {
-    const element = turnWhiteBgColor[i];
-    element.classList.toggle("turned-bg");
-  }
-  for (let i = 0; i < turnColor.length; i++) {
-    const element = turnColor[i];
-    element.classList.toggle("white");
-  }
-  for (let i = 0; i < current.length; i++) {
-    const element = current[i];
-    element.classList.toggle("current-dark");
-  }
+  togglerColors(mainColor, "bg-dark");
+  togglerColors(turnWhiteBgImg, "turned")
+  togglerColors(turnWhiteBgColor, "turned-bg")
+  togglerColors(turnColor, "white")
+  togglerColors(current, "current-dark");
 });

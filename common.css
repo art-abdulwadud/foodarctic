@@ -116,7 +116,7 @@
 
 /*** colors ***/
 .white {
-  color: var(--light);
+  color: var(--light) !important;
 }
 
 .overlay {
@@ -138,6 +138,10 @@
 
 .bg-none {
   background: transparent !important;
+}
+
+.turn {
+  background: white !important;
 }
 
 /*** Buttons ***/

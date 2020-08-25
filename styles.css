@@ -278,6 +278,14 @@ footer {
   color: white;
 }
 
+/* contact Form */
+
+.contact-form {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
   header {
     min-height: 80vh;
